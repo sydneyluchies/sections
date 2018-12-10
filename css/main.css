@@ -9,39 +9,52 @@ html {
   font-size: 1rem;
 }
 
-img {
-  width: 18rem;
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
-h1 {
+img {
+  width: 100%;
+  display: block;
+}
+
+h2 {
   font-family: lato, sans-serif;
   font-style: normal;
+  font-size: 1.5rem;
 }
 
 body {
-  margin: 1.5em;
-  padding: 1em;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  margin: 0;
   list-style-type: none;
   background-color: #eee9de;
 }
 
-li {
+.btn {
   display: inline-block;
-  margin: .5em;
-  width: 6em;
-  padding: .35em;
+  padding: .4em;
   background-color: #eee9de;
   border-style: solid;
   border-radius: 10px;
-  text-align: left;
   color: #333;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
+}
+
+.btn:hover {
+  background-color: #666;
+  color: #fff;
+}
+
+section {
+  padding-top: 2em;
+  padding-bottom: 2em;
   text-align: center;
 }
 
-li:hover {
-  background-color: #666;
-  color: #fff;
+div {
+  max-width: 25em;
+  display: inline-block;
+  padding: 1em;
+  text-align: left;
+  vertical-align: middle;
 }
